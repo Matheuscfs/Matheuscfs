@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="hex" width="52" height="90" patternUnits="userSpaceOnUse" patternTransform="scale(0.9)">
+      <path d="M26 0 L52 15 L52 45 L26 60 L0 45 L0 15 Z M26 60 L26 90" fill="none" stroke="#38bdf8" stroke-opacity="0.12" stroke-width="1.2"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="hexmask"><rect width="1200" height="360" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#hex)" mask="url(#hexmask)"/>
+
+  <!-- highlighted cells, a nod to the H3 dispatch project -->
+  <g fill="none" stroke="url(#accent)" stroke-width="2.5" opacity="0.9">
+    <path d="M934 118 L957 131 L957 158 L934 171 L911 158 L911 131 Z"/>
+    <path d="M980 144 L1003 157 L1003 184 L980 197 L957 184 L957 157 Z" opacity="0.7"/>
+    <path d="M888 144 L911 157 L911 184 L888 197 L865 184 L865 157 Z" opacity="0.5"/>
+    <path d="M934 170 L957 183 L957 210 L934 223 L911 210 L911 183 Z" opacity="0.6"/>
+    <path d="M1026 118 L1049 131 L1049 158 L1026 171 L1003 158 L1003 131 Z" opacity="0.35"/>
+  </g>
+  <circle cx="934" cy="144" r="6" fill="#38bdf8"/>
+
+  <rect x="80" y="92" width="64" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="80" y="160" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#f8fafc">Matheus Fachim</text>
+  <text x="80" y="208" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="26" fill="#cbd5e1">Desenvolvedor Full-Stack · TypeScript · React · Next.js</text>
+  <text x="80" y="246" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8">Produtos com IA, finanças e tributário — do banco de dados ao app</text>
+  <text x="80" y="296" font-family="'Cascadia Code', Consolas, Menlo, monospace" font-size="16" fill="#38bdf8">~/paraná-brasil $ building in public_</text>
+</svg>
